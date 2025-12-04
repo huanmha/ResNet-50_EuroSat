@@ -1,0 +1,35 @@
+name: dl_resnet_env
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+
+  # PyTorch con soporte CUDA
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1
+
+  # Ciencia de datos / procesamiento
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - pillow
+  - seaborn
+
+  # Jupyter e integración con VS Code
+  - jupyterlab
+  - ipykernel
+
+  # Utilidades
+  - pip
+  - pip:
+      - tqdm
+      - torchsummary
+      - tensorboard
+      - opencv-python
